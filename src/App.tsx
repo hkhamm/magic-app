@@ -1,12 +1,12 @@
 import React, { FC } from "react"
-import { HashRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Home from "./Home"
 import House from "./House"
 import Landscape from "./Landscape"
 import Screensaver from "./Screensaver"
 
 const App: FC = () => (
-  <HashRouter>
+  <BrowserRouter>
     <Switch>
       <Route exact={true} path="/">
         <Screensaver />
@@ -21,7 +21,7 @@ const App: FC = () => (
         <House />
       </Route>
     </Switch>
-  </HashRouter>
+  </BrowserRouter>
 )
 
 export default App
