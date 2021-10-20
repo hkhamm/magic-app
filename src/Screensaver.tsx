@@ -7,7 +7,7 @@ const Screensaver: FC = () => {
   const history = useHistory()
 
   return (
-    <Button label="open home" onClick={() => history.push("/home")}>
+    <Button id="open home" onClick={() => history.push("/home")}>
       <ScreensaverSvg />
     </Button>
   )
