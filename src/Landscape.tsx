@@ -102,7 +102,7 @@ const Landscape: FC = () => {
           left: 1411,
           bottom: 153,
           height: 154,
-          width: `53`,
+          width: 153,
         }}
         onClick={() => history.push("/buttercat")}
       />
