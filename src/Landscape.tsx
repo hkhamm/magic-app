@@ -8,7 +8,7 @@ const Landscape: FC = () => {
   return (
     <div style={{ position: "relative" }}>
       <Button
-        label="back"
+        id="back"
         style={{
           position: "absolute",
           left: 23,
