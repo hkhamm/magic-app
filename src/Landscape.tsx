@@ -6,7 +6,7 @@ import LandscapeSvg from "./svgs/Landscape"
 const Landscape: FC = () => {
   const history = useHistory()
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <Button
         label="back"
         style={{
@@ -19,7 +19,7 @@ const Landscape: FC = () => {
         onClick={() => history.push("/home")}
       />
       <LandscapeSvg />
-    </>
+    </div>
   )
 }
 
