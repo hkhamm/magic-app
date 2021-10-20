@@ -7,11 +7,11 @@ const Home: FC = () => {
   const history = useHistory()
 
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <HomeSvg />
 
       <Button
-        label="open landscape"
+        id="open landscape"
         style={{
           position: "absolute",
           left: 0,
@@ -23,7 +23,7 @@ const Home: FC = () => {
       />
 
       <Button
-        label="open house"
+        id="open house"
         style={{
           position: "absolute",
           right: 0,
@@ -33,7 +33,7 @@ const Home: FC = () => {
         }}
         onClick={() => history.push("/house")}
       />
-    </>
+    </div>
   )
 }
 

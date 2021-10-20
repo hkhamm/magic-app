@@ -6,9 +6,9 @@ import HouseSvg from "./svgs/HouseSvg"
 const House: FC = () => {
   const history = useHistory()
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <Button
-        label="back"
+        id="back"
         style={{
           position: "absolute",
           left: 23,
@@ -19,7 +19,7 @@ const House: FC = () => {
         onClick={() => history.push("/home")}
       />
       <HouseSvg />
-    </>
+    </div>
   )
 }
 
