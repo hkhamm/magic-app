@@ -1,6 +1,6 @@
 import React, { FC, SVGProps } from "react"
 
-const WildHunt: FC<SVGProps<SVGSVGElement>> = () => (
+const WildHuntSvg: FC<SVGProps<SVGSVGElement>> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -16,4 +16,4 @@ const WildHunt: FC<SVGProps<SVGSVGElement>> = () => (
   </svg>
 )
 
-export default WildHunt
+export default WildHuntSvg

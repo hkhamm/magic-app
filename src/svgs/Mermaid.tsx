@@ -1,6 +1,6 @@
 import React, { FC, SVGProps } from "react"
 
-const Mermaid: FC<SVGProps<SVGSVGElement>> = () => (
+const MermaidSvg: FC<SVGProps<SVGSVGElement>> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -17,4 +17,4 @@ const Mermaid: FC<SVGProps<SVGSVGElement>> = () => (
   </svg>
 )
 
-export default Mermaid
+export default MermaidSvg

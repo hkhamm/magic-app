@@ -1,9 +1,9 @@
 import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
-import LandscapeSvg from "./svgs/LandscapeSvg"
+import BlueFlameSvg from "./svgs/BlueFlame"
 
-const Landscape: FC = () => {
+const BlueFlame: FC = () => {
   const history = useHistory()
   return (
     <>
@@ -18,9 +18,9 @@ const Landscape: FC = () => {
         }}
         onClick={() => history.push("/home")}
       />
-      <LandscapeSvg />
+      <BlueFlameSvg />
     </>
   )
 }
 
-export default Landscape
+export default BlueFlame
