@@ -8,7 +8,7 @@ const WildHunt: FC = () => {
   return (
     <>
       <Button
-        label="back"
+        id="back"
         style={{
           position: "absolute",
           left: 23,
@@ -16,7 +16,7 @@ const WildHunt: FC = () => {
           height: 92,
           width: 198,
         }}
-        onClick={() => history.push("/home")}
+        onClick={() => history.push("/landscape")}
       />
       <WildHuntSvg />
     </>
