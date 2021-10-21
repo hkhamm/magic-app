@@ -20,7 +20,7 @@ yarn serve
 
 ## Chromium full screen
 
-https://pimylifeup.com/raspberry-pi-kiosk/
+https://www.makeuseof.com/how-to-run-a-raspberry-pi-program-script-at-startup/
 
 ## Hide cursor
 
