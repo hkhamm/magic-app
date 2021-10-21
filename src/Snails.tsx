@@ -8,7 +8,7 @@ const Snails: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -21,7 +21,7 @@ const Snails: FC = () => {
         onClick={() => history.push("/house")}
       />
       <SnailsSvg />
-    </>
+    </div>
   )
 }
 

@@ -10,7 +10,9 @@
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn lint:format && yarn lint:fix ",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "chrome": "/usr/bin/chromium-browser --start-fullscreen http://localhost:5000",
+    "start": "concurrently 'yarn serve' 'yarn chrome'"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",

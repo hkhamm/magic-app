@@ -8,7 +8,7 @@ const WitchBottle: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -21,7 +21,7 @@ const WitchBottle: FC = () => {
         onClick={() => history.push("/house")}
       />
       <WitchBottleSvg />
-    </>
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ const Landscape: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{

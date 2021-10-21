@@ -8,7 +8,7 @@ const ChamberPot: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -21,7 +21,7 @@ const ChamberPot: FC = () => {
         onClick={() => history.push("/house")}
       />
       <ChamberPotSvg />
-    </>
+    </div>
   )
 }
 

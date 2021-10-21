@@ -9,7 +9,7 @@ const Home: FC = () => {
   useBackToScreensaver()
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <HomeSvg />
 
       <Button

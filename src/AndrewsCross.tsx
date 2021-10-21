@@ -6,7 +6,7 @@ import AndresCrossSvg from "./svgs/AndrewsCross"
 const AndrewsCross: FC = () => {
   const history = useHistory()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -19,7 +19,7 @@ const AndrewsCross: FC = () => {
         onClick={() => history.push("/house")}
       />
       <AndresCrossSvg />
-    </>
+    </div>
   )
 }
 

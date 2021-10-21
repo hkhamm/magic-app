@@ -8,7 +8,7 @@ const WildHunt: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -21,7 +21,7 @@ const WildHunt: FC = () => {
         onClick={() => history.push("/landscape")}
       />
       <WildHuntSvg />
-    </>
+    </div>
   )
 }
 

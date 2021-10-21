@@ -8,7 +8,7 @@ const Shoes: FC = () => {
   const history = useHistory()
   useBackToScreensaver()
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Button
         id="back"
         style={{
@@ -21,7 +21,7 @@ const Shoes: FC = () => {
         onClick={() => history.push("/house")}
       />
       <ShoesSvg />
-    </>
+    </div>
   )
 }
 
