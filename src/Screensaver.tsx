@@ -7,9 +7,11 @@ const Screensaver: FC = () => {
   const history = useHistory()
 
   return (
-    <Button id="open home" onClick={() => history.push("/home")}>
-      <ScreensaverSvg />
-    </Button>
+    <div style={{ overflow: "hidden" }}>
+      <Button id="open home" onClick={() => history.push("/home")}>
+        <ScreensaverSvg />
+      </Button>
+    </div>
   )
 }
 
