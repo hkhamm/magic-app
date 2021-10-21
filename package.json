@@ -12,7 +12,7 @@
     "lint": "yarn lint:format && yarn lint:fix ",
     "type-check": "tsc",
     "chrome": "/usr/bin/chromium-browser --incognito --start-fullscreen http://localhost:3000",
-    "start": "concurrently 'yarn serve' 'yarn chrome'"
+    "start": "concurrently 'yarn dev' 'yarn chrome'"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",
