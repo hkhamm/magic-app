@@ -12,7 +12,7 @@ const Landscape: FC = () => {
         style={{
           position: "absolute",
           left: 23,
-          bottom: 19,
+          bottom: 26,
           height: 92,
           width: 198,
         }}

@@ -7,6 +7,7 @@ import Bread from "./Bread"
 import Buttercat from "./Buttercat"
 import CatSkull from "./CatSkull"
 import ChamberPot from "./ChamberPot"
+import Cross from "./Cross"
 import FairyLoaf from "./FairyLoaf"
 import FairyRing from "./FairyRing"
 import Home from "./Home"
@@ -41,6 +42,9 @@ const App: FC = () => (
       </Route>
       <Route path="/andrews-cross">
         <AndrewsCross />
+      </Route>
+      <Route path="/cross">
+        <Cross />
       </Route>
       <Route path="/blue-flame">
         <BlueFlame />
@@ -78,7 +82,7 @@ const App: FC = () => (
       <Route path="/mermaid">
         <Mermaid />
       </Route>
-      <Route path="/shoes">
+      <Route path="/shoe">
         <Shoes />
       </Route>
       <Route path="/snails">
