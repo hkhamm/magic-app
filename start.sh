@@ -9,4 +9,4 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 cd ~/Desktop/magic-app
 yarn serve
 
-/usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk http://localhost:3000
+/usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk http://localhost:5000
