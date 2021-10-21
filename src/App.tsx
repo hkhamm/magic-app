@@ -1,3 +1,4 @@
+import { styled } from "@mui/system"
 import React, { FC } from "react"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import AndrewsCross from "./screens/AndrewsCross"
@@ -25,83 +26,94 @@ import WillOWisps from "./screens/WillOWisps"
 import WishingTree from "./screens/WishingTree"
 import WitchBottle from "./screens/WitchBottle"
 
+const Container = styled("div")({
+  height: "100vh",
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  flex: 1,
+  backgroundColor: "rgb(212, 198, 161)",
+})
+
 const App: FC = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact={true} path="/">
-        <Screensaver />
-      </Route>
-      <Route path="/home">
-        <Home />
-      </Route>
-      <Route path="/landscape">
-        <Landscape />
-      </Route>
-      <Route path="/house">
-        <House />
-      </Route>
-      <Route path="/andrews-cross">
-        <AndrewsCross />
-      </Route>
-      <Route path="/cross">
-        <Cross />
-      </Route>
-      <Route path="/blue-flame">
-        <BlueFlame />
-      </Route>
-      <Route path="/bowl-of-milk">
-        <BowlOfMilk />
-      </Route>
-      <Route path="/bread">
-        <Bread />
-      </Route>
-      <Route path="/buttercat">
-        <Buttercat />
-      </Route>
-      <Route path="/cat-skull">
-        <CatSkull />
-      </Route>
-      <Route path="/chamber-pot">
-        <ChamberPot />
-      </Route>
-      <Route path="/fairy-loaf">
-        <FairyLoaf />
-      </Route>
-      <Route path="/fairy-ring">
-        <FairyRing />
-      </Route>
-      <Route path="/kelpie">
-        <Kelpie />
-      </Route>
-      <Route path="/kirtle">
-        <Kirtle />
-      </Route>
-      <Route path="/mandrake">
-        <Mandrake />
-      </Route>
-      <Route path="/mermaid">
-        <Mermaid />
-      </Route>
-      <Route path="/shoe">
-        <Shoes />
-      </Route>
-      <Route path="/snails">
-        <Snails />
-      </Route>
-      <Route path="/wild-hunt">
-        <WildHunt />
-      </Route>
-      <Route path="/will-o-wisps">
-        <WillOWisps />
-      </Route>
-      <Route path="/wishing-tree">
-        <WishingTree />
-      </Route>
-      <Route path="/witch-bottle">
-        <WitchBottle />
-      </Route>
-    </Switch>
-  </BrowserRouter>
+  <Container>
+    <BrowserRouter>
+      <Switch>
+        <Route exact={true} path="/">
+          <Screensaver />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/landscape">
+          <Landscape />
+        </Route>
+        <Route path="/house">
+          <House />
+        </Route>
+        <Route path="/andrews-cross">
+          <AndrewsCross />
+        </Route>
+        <Route path="/cross">
+          <Cross />
+        </Route>
+        <Route path="/blue-flame">
+          <BlueFlame />
+        </Route>
+        <Route path="/bowl-of-milk">
+          <BowlOfMilk />
+        </Route>
+        <Route path="/bread">
+          <Bread />
+        </Route>
+        <Route path="/buttercat">
+          <Buttercat />
+        </Route>
+        <Route path="/cat-skull">
+          <CatSkull />
+        </Route>
+        <Route path="/chamber-pot">
+          <ChamberPot />
+        </Route>
+        <Route path="/fairy-loaf">
+          <FairyLoaf />
+        </Route>
+        <Route path="/fairy-ring">
+          <FairyRing />
+        </Route>
+        <Route path="/kelpie">
+          <Kelpie />
+        </Route>
+        <Route path="/kirtle">
+          <Kirtle />
+        </Route>
+        <Route path="/mandrake">
+          <Mandrake />
+        </Route>
+        <Route path="/mermaid">
+          <Mermaid />
+        </Route>
+        <Route path="/shoe">
+          <Shoes />
+        </Route>
+        <Route path="/snails">
+          <Snails />
+        </Route>
+        <Route path="/wild-hunt">
+          <WildHunt />
+        </Route>
+        <Route path="/will-o-wisps">
+          <WillOWisps />
+        </Route>
+        <Route path="/wishing-tree">
+          <WishingTree />
+        </Route>
+        <Route path="/witch-bottle">
+          <WitchBottle />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  </Container>
 )
 
 export default App
