@@ -6,7 +6,7 @@ xset -dpms
 sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
 sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
-cd ~/Desktop/magic-app
+cd /home/pi/Desktop/magic-app
 yarn serve
 
 /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk http://localhost:5000
