@@ -11,8 +11,8 @@
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn lint:format && yarn lint:fix ",
     "type-check": "tsc",
-    "chrome": "/usr/bin/chromium-browser --start-fullscreen http://localhost:3000",
-    "start": "concurrently 'yarn dev' 'yarn chrome'"
+    "chrome": "/usr/bin/chromium-browser --incognito --start-fullscreen http://localhost:3000",
+    "start": "concurrently 'yarn serve' 'yarn chrome'"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",
