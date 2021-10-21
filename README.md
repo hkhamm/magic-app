@@ -18,13 +18,16 @@ yarn dev
 yarn serve
 ```
 
-## Chromium full screen
+## Chromium full screen on start
 
-https://www.makeuseof.com/how-to-
-run-a-raspberry-pi-program-script-at-startup/
+`sudo nano /etc/rc.local`
+
+Add this before the exit 0:
+
+`sudo bash /home/pi/Desktop/magic-app/start.sh`
 
 ## Hide cursor
 
-Edit `/etc/lightdm/lightdm.conf`
+`sudo nano /etc/lightdm/lightdm.conf`
 
 Add `xserver-command=X -bs -core -nocursor` at the bottom in the `[Seat*]` section
