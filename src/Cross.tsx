@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import CrossSvg from "./svgs/Cross"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const Cross: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <>
       <Button

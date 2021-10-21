@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import KelpieSvg from "./svgs/Kelpie"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const Kelpie: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <>
       <Button

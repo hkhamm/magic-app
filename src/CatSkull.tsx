@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import CatSkullSvg from "./svgs/CatSkull"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const CatSkull: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <>
       <Button

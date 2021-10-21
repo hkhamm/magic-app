@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import MandrakeSvg from "./svgs/Mandrake"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const Mandrake: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <>
       <Button

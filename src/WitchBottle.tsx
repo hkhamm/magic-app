@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import WitchBottleSvg from "./svgs/WitchBottle"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const WitchBottle: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <>
       <Button

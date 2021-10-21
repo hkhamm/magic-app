@@ -2,9 +2,11 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import HouseSvg from "./svgs/HouseSvg"
+import { useBackToScreensaver } from "./useBackToHome"
 
 const House: FC = () => {
   const history = useHistory()
+  useBackToScreensaver()
   return (
     <div style={{ position: "relative" }}>
       <Button
