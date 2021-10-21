@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import WillOWispsSvg from "./svgs/WillOWisps"
-import { useBackToScreensaver } from "./useBackToHome"
+import { useBackToScreensaver } from "./useBackToScreensaver"
 
 const WillOWisps: FC = () => {
   const history = useHistory()

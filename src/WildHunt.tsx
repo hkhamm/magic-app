@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import WildHuntSvg from "./svgs/WildHunt"
-import { useBackToScreensaver } from "./useBackToHome"
+import { useBackToScreensaver } from "./useBackToScreensaver"
 
 const WildHunt: FC = () => {
   const history = useHistory()

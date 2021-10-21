@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { useHistory } from "react-router"
 import Button from "./Button"
 import LandscapeSvg from "./svgs/LandscapeSvg"
-import { useBackToScreensaver } from "./useBackToHome"
+import { useBackToScreensaver } from "./useBackToScreensaver"
 
 const Landscape: FC = () => {
   const history = useHistory()
