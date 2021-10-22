@@ -47,7 +47,7 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 At the end add:
 
 ```
-/usr/bin/chromium-browser --disable-restore-session-state --start-fullscreen http://localhost &
+/usr/bin/chromium-browser --incognito --start-fullscreen http://localhost &
 ```
 
 ### Reboot the system to run the app
