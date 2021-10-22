@@ -27,7 +27,7 @@ yarn build
 ### Install app
 
 ```shell
-sudo cp -R /home/pi/Desktop/magic-app/dist/* /var/www/html
+yarn deploy
 ```
 
 ### Hide cursor
