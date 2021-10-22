@@ -50,7 +50,11 @@ Add this before `exit 0`:
 sudo bash /home/pi/Desktop/magic-app/start.sh
 ```
 
-### Restart the system to run the app
+### Reboot the system to run the app
+
+```
+sudo reboot
+```
 
 ## Development
 
