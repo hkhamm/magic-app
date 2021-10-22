@@ -47,6 +47,9 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 At the end add:
 
 ```
+xset s noblank
+xset s off
+xset -dpms
 /usr/bin/chromium-browser --incognito --kiosk http://localhost &
 ```
 
