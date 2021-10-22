@@ -47,7 +47,7 @@ sudo nano /etc/rc.local
 Add this before `exit 0`:
 
 ```
-sudo bash /home/pi/Desktop/magic-app/start.sh
+su - pi -c "bash /home/pi/Desktop/magic-app/start.sh"
 ```
 
 ### Reboot the system to run the app
