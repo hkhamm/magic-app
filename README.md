@@ -41,13 +41,13 @@ Add `xserver-command=X -bs -core -nocursor` at the bottom in the `[Seat*]` secti
 ### Start Chromium full screen on system start
 
 ```shell
-sudo nano /etc/rc.local
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 ```
 
-Add this before `exit 0`:
+At the end add:
 
 ```
-su - pi -c "bash /home/pi/Desktop/magic-app/start.sh"
+/usr/bin/chromium-browser --disable-restore-session-state --start-fullscreen http://localhost &
 ```
 
 ### Reboot the system to run the app
