@@ -47,8 +47,10 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 At the end add:
 
 ```
-/usr/bin/chromium-browser --incognito --start-fullscreen http://localhost &
+/usr/bin/chromium-browser --incognito --kiosk http://localhost &
 ```
+
+Note: exit kiosk mode with ALT-F4
 
 ### Reboot the system to run the app
 
